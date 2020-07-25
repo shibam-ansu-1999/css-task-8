@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Image Gallery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+</head>
+
+
+<style type="text/css">
+	
+	*{
+	margin:0px;
+	padding: 0px;
+	}
+	
+	.nav{
+		display: flex;
+		width: 100%;
+		min-height: 118px;
+		font-size: 50px;
+		padding: 15px;
+		background-color: #0A1E1A;
+		color: #20EC0B;
+		align-items: center;
+		justify-content: space-between;
+		position: fixed;
+		margin-top: 0px;
+	}
+	.title{
+		display: flex;
+		margin-top: 0px;
+		align-self: flex-start;
+		animation: change 0.5s forwards;
+		animation-delay: 4s;
+		animation-iteration-count: infinite;
+	}
+	@keyframes change{
+		0%{
+			color:#0A1E1A;
+			font-weight: 600; 
+		}
+		25%{
+			color:#006CD7;
+			font-weight: 600;
+		}
+		50%{
+			color:#FF9804;
+			font-weight: 600;
+		}
+		75%{
+			color:#DFD905;
+			font-weight: 600;
+		}
+		100%{
+			color:#F95B02;
+			font-weight: 600;
+		}
+	}
+	#elements{
+		display: flex;
+		font-size: 25px;
+		align-self: flex-end;
+		justify-content: space-between;
+		
+	}
+	.type{
+		 display: flex;
+		 width:120px;
+		 align-items: center;
+	}
+	.type:hover{
+		cursor: pointer;
+		color: #FFFF00;
+	}
+
+	.container{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: center;
+		position: absolute;
+		margin-top: 150px;
+	}
+
+	.box{
+		width: 300px;
+		height: 300px;
+		border: 2px solid white;
+		flex-grow: 1;
+	}
+	
+
+</style>
+
+<body>
+	<div>
+	<div class="container">
+		<img class="box" src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Download-HD-Photo-Gallery-Images.jpg">
+		<img class="box" src="https://ansunibaate.com/wp-content/uploads/2018/07/68550443-butterfly-wallpape.jpg">
+		<img class="box" src="https://ansunibaate.com/wp-content/uploads/2019/03/yellow-forest-nature-image-hd-wallpaper-download.jpg">
+		<img class="box" src="https://wimg.jakpost.travel/wimages/sm/4-48126_nature-wallpaper-full-hd-gallery-images-photo-free.jpg">
+		<img class="box" src="https://www.setaswall.com/wp-content/uploads/2017/04/Beautiful-Trees-Row-Wallpaper-1920x1080-340x220.jpg">
+		<img class="box" src="https://i.pinimg.com/236x/c6/1f/7e/c61f7ed39120062aea8db359492cbaef--lush-green-go-green.jpg">
+		<img class="box" src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Free-Desktop-HD-Photo-Gallery-Pictures-1.jpg">
+		<img class="box" src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Download-HD-Photo-Gallery-Images.jpg">
+		<img class="box" src="https://ansunibaate.com/wp-content/uploads/2018/07/68550443-butterfly-wallpape.jpg">
+		<img class="box" src="https://ansunibaate.com/wp-content/uploads/2019/03/yellow-forest-nature-image-hd-wallpaper-download.jpg">
+		<img class="box" src="https://wimg.jakpost.travel/wimages/sm/4-48126_nature-wallpaper-full-hd-gallery-images-photo-free.jpg">
+		<img class="box" src="https://www.setaswall.com/wp-content/uploads/2017/04/Beautiful-Trees-Row-Wallpaper-1920x1080-340x220.jpg">
+		<img class="box" src="https://i.pinimg.com/236x/c6/1f/7e/c61f7ed39120062aea8db359492cbaef--lush-green-go-green.jpg">
+		<img class="box" src="https://cutewallpaper.org/21/wallpaper-of-nature/3D-Nature-Hd-Wallpapers-HD-Wallpapers-Gallery.jpg">
+		<img class="box" src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Free-Desktop-HD-Photo-Gallery-Pictures-1.jpg">
+		<img class="box" src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Download-HD-Photo-Gallery-Images.jpg">
+		<img class="box" src="https://images.all-free-download.com/images/graphicthumb/hd_flower_picture_01_hd_pictures_167032.jpg">
+	</div>
+	<div class="nav">
+		<div class="title">Ansu's Gallery</div>
+		<div id="elements">
+			<div class="type">Image<span>&nbsp<i class="fa fa-angle-down"></i></span></div>
+			<div class="type">Video<span>&nbsp<i class="fa fa-angle-down"></i></span></div> 
+		</div>
+	</div>
+
+</body>
+</html>
